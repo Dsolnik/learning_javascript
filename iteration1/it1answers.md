@@ -1,7 +1,9 @@
 1. GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE. GET, POST are most common.
 
 2. 
+
 #<link rel="stylesheet" type="text/css" href="name.css" /> to link a css sheet
+
 #<script type="text/javascript" src="name.js"></script> to link a javascript file
 
 3. A set of functions and tools that a company gives to the public so they can use their services.
