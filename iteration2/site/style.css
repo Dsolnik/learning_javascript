@@ -1,0 +1,15 @@
+body {
+    height:100%;
+    width:100%;
+}
+button {
+    color:orangered;
+    background-color: #f5e3e4;
+}
+.wrapper {
+    width:100%;
+    position: absolute;
+    top:50%;
+    text-align: center;
+    margin: 0 auto;
+}
