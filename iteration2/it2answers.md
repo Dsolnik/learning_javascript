@@ -145,9 +145,13 @@ Write some IIFEs.
 #Part 3: Project Expansions
 * What is MVC? How does it compare to the idea of separation of presentation and content?
     Webpages are divided into 3 sections.
+    
     model - The core of the page. Determines what to do when events are triggered, databased calls, etc.
+    
     view - everything that you see, the UI.
+    
     controller - Reacts to events and calls the model
+
 Now read this:
 https://addyosmani.com/resources/essentialjsdesignpatterns/book/#singletonpatternjavascript
 Read on the following patterns:
