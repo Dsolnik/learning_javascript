@@ -59,7 +59,7 @@ http://javascriptissexy.com/understand-javascript-callback-functions-and-use-the
 ##Functions and JS Fundamentals 
 For this section, I want you to write code that tests out and demonstrates the concepts below
 Write a pure function. Write a non-pure function. Then explain why this is important in programming
-``javascript
+```javascript
    a = {value : 5}
    var pure_add_two = function(a){
         return a + 2
@@ -76,11 +76,11 @@ Write a pure function. Write a non-pure function. Then explain why this is impor
    a.value // 7
    
     
-``
+```
 
 Write code that tests and demonstrates the prototype chain.
 
-``javascript
+```javascript
     Object.prototype.a = 3;
     var obj = {}
     obj.a // 3
@@ -106,11 +106,11 @@ Write code that tests and demonstrates the prototype chain.
     other.getName() //"dank"
     other.name2 // "memes"
     other.kind // "otherthing"
-``
+```
 
 Write code that shows that many things in Javascript is an object.
 
-``javascript
+```javascript
     var a = {}
     var b = []
     var c = function(){}
@@ -118,18 +118,18 @@ Write code that shows that many things in Javascript is an object.
     b instanceof Object \\ true
     c instanceof Object \\ true
     
-``
+```
 
 Write some IIFEs.
 
-``javascript
+```javascript
     (function(){
         var a = "cool"
         console.log(a)
     })();
     
     console.log(a) // undefined
-``
+```
 
 * What is the prototype chain?
     The prototype chain is a chain associated with each object that determines what attributes and methods an object can acess. It terminates in NULL. When you check a variables property, the browser searches through the prototype chain for the property.
