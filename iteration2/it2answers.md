@@ -127,6 +127,7 @@ Write some IIFEs.
         var a = "cool"
         console.log(a)
     })();
+    
     console.log(a) // undefined
 ``
 
