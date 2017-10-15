@@ -12,8 +12,14 @@ function httpRequest(url, callback){
 }
 
 function loadSushi(){
-    httpRequest("http://demo3354820.mockable.io/menu/ushi", function(text){
+    httpRequest("http://demo3354820.mockable.io/menu/sushi", function(text){
         var a = document.getElementById('toplace');
         a.innerHTML = JSON.stringify(text)
     })
+}
+
+window.onload = function(){
+    var btn = document.querySelector("button");
+    console.log(btn);
+    btn.onclick = loadSushi;
 }
