@@ -176,8 +176,13 @@ What are the five categories of status codes?
 * 5xx Server Error
 
 Memorize the following status codes:
+
 200 OK; 
+
 401 Unauthorized Access -need authentication
+
 403 Forbidden Access - don't try to access it again
+
 404 Not Found
+
 500 Internal Service Error
