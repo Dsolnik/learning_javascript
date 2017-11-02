@@ -1,0 +1,52 @@
+CREATE TABLE Table1
+(ID INT, Value VARCHAR(10));
+INSERT INTO Table1(ID, Value)
+SELECT 1, 'First'
+UNION ALL
+SELECT 2, 'Second'
+UNION ALL
+SELECT 3, 'Third'
+UNION ALL
+SELECT 4, 'Fourth'
+UNION ALL
+SELECT 5, 'Fifth';
+
+CREATE TABLE Table2
+(ID INT, Value VARCHAR(10));
+INSERT INTO Table2(ID, Value)
+SELECT 1, 'First'
+UNION ALL
+SELECT 2, 'Second - 2'
+UNION ALL
+SELECT 3, 'Third'
+UNION ALL
+SELECT 6, 'Sixth'
+UNION ALL
+SELECT 7, 'Seventh'
+UNION ALL
+SELECT 8, 'Eigth';
+
+SELECT * 
+FROM Table2;
+
+SELECT *
+FROM Table1;
+
+SELECT t1.ID T1ID, t1.Value AS T1Value 
+FROM Table1 t1
+UNION ALL
+SELECT t2.ID AS T2ID, t2.Value as T2Value
+From Table2 t2
+ORDER BY T1ID;
+
+SELECT t1.ID T1ID, t1.Value AS T1Value 
+FROM Table1 t1
+UNION
+SELECT t2.ID AS T2ID, t2.Value as T2Value
+From Table2 t2;
+
+
+SELECT t1.ID as ID, t1.Value as T1Value, t2.Value as T2Value 
+FROM Table1 t1
+LEFT JOIN Table2 t2 on t1.ID = t2.ID;
+

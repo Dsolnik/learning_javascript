@@ -1,0 +1,14 @@
+SELECT 'MyFirstValue' as SomeValue;
+
+SELECT 1 + 1 AS TWO;
+
+SELECT NOW();
+SELECT CURDATE();
+SELECT CURTIME();
+
+SELECT PI();
+
+SELECT MOD(45, 7);
+
+SELECT SQRT(25);
+
